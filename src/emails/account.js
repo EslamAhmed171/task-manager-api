@@ -22,7 +22,7 @@ const sendEmail = (mailDetails) => {
 const sendWelcomeEmail  = (email, name) =>{
 
     let mailDetails = {
-        from: 'ea1356332@gmail.com',
+        from: process.env.EMAIL_ADDRESS,
         to: email,
         subject: 'Welcome to our task app',
         text: `Welecome to our app, ${name} let me know how you get along with the app`
@@ -34,7 +34,7 @@ const sendWelcomeEmail  = (email, name) =>{
 const sendCancelationEmail = (email, name) => {
 
     let mailDetails = {
-        from: 'ea1356332@gmail.com',
+        from: process.env.EMAIL_ADDRESS,
         to: email,
         subject: 'Sorry to see you go',
         text: `Goodbye, ${name} i hope to see you back soon :)`
