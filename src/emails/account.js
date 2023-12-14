@@ -20,7 +20,7 @@ const sendEmail = (mailDetails) => {
 }
 
 const sendWelcomeEmail  = (email, name) =>{
-
+    
     let mailDetails = {
         from: process.env.EMAIL_ADDRESS,
         to: email,
